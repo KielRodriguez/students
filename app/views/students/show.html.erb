@@ -1,0 +1,11 @@
+<h1>Estudiante Registrado</h1>
+<p>
+  <strong>Nombre:</strong>
+    <%= @student.name.concat(" #{@student.last_name}") %>
+</p>
+<p>
+  <strong>Fecha Nacimiento</strong>
+    <%= @student.birth_date %>
+</p>
+
+<%= link_to 'Lista de estudiantes', students_path %>
